@@ -13,7 +13,7 @@ class LeaderboardManager {
   }
 
   addEntry(name, score, date = new Date().toISOString().split("T")[0]) {
-    if (!name || typeof name !== "string") {
+    if (name === null || name === undefined || typeof name !== "string") {
       throw new Error("Invalid player name");
     }
     const cleanName = name.trim();

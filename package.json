@@ -1,14 +1,24 @@
 {
   "name": "quizly",
   "version": "1.0.0",
+  "description": "Interactive command-line JavaScript quiz application with leaderboard and instant feedback",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "quizly": "./index.js"
   },
-  "keywords": [],
-  "author": "",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test tests/**/*.test.js"
+  },
+  "keywords": [
+    "quiz",
+    "javascript",
+    "cli",
+    "education",
+    "leaderboard"
+  ],
+  "author": "Lakshya Nigam",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "kuler": "^2.0.0",
     "readline-sync": "^1.4.10"
