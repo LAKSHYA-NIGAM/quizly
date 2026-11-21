@@ -16,6 +16,8 @@ An interactive, modular command-line quiz application that evaluates core JavaSc
 - **Dynamic Leaderboard System:** Automatically inserts, sorts, and displays top scores with timestamped rankings.
 - **Comprehensive Test Coverage:** 100% test pass rate using Node.js native test runner (`node:test`).
 - **Continuous Integration:** Automated matrix testing against Node 18, 20, and 22 via GitHub Actions.
+- **Custom Quiz Schema Validator (`src/quizValidator.js`):** Enforces JSON question integrity, guarantees non-duplicate answer options, and calculates estimated completion duration across difficulty tiers.
+- **Streak Combo Multipliers & Speed Bonuses (`src/streakScoring.js`):** Multiplies points for answer streaks up to 2.0x combo frenzy and computes sub-second speed bonuses.
 
 ---
 
